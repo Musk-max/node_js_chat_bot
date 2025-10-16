@@ -1,0 +1,25 @@
+{
+  "name": "the_chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha --timeout=0 ./tests/*.spec.js" ,
+    "dev":"supervisor index",
+    "start": "node index"
+
+  },
+  "author": "franck_LAGOU",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "lodash": "^4.17.21",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "mocha": "^11.7.4",
+    "supertest": "^7.1.4",
+    "supervisor": "^0.12.0"
+  }
+}
